@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="hackthon.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management System</h1>
+        <img src="https://media.licdn.com/dms/image/C4D12AQG6BJE8v6pcXg/article-cover_image-shrink_600_2000/0/1614850200542?e=2147483647&v=beta&t=DVDg7uuq0r2oQcJryH623VmzvMJkyZJjnO5tXlS0c8U" width="1320" alt="Event">
+        <img src="https://www.shutterstock.com/shutterstock/photos/729022861/display_1500/stock-vector-banner-event-management-concept-vector-illustration-with-icons-729022861.jpg" width="1320" height="600" alt="Event">
+        <h3></h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="createEvent">Create Event</a></li>
+            <li><a href="#" id="viewEvents">View Events</a></li>
+        </ul>
+    </nav>
+    <section id="mainContent">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Event Management System</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<h2>Create New Event</h2><form><label for="eventName">Event Name:</label><input type="text" id="eventName"><br><label for="eventDate">Event Date:</label><input type="date" id="eventDate"><br><button type="submit">Create Event</button></form>';
+});
+
+document.getElementById('viewEvents').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('mainContent').innerHTML = '<h2>Upcoming Events</h2><ul><li>Event 1 - Date</li><li>Event 2 - Date</li><li>Event 3 - Date</li></ul>';
+});
+
